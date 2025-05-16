@@ -1,0 +1,6 @@
+name: Harvest Season
+version: '1.0'
+main: dev.danielp.harvestseason.Main
+api-version: '1.19'
+authors: [Daniel Poprawski, gelloe]
+description: Harvest an entire field of crops in seconds
