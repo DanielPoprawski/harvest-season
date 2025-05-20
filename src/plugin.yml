@@ -4,3 +4,31 @@ main: dev.danielp.harvestseason.Main
 api-version: '1.19'
 authors: [Daniel Poprawski, gelloe]
 description: Harvest an entire field of crops in seconds
+
+commands:
+  harvestseason:
+    description: Main command for HarvestSeason plugin
+    aliases: [hs, harvest]
+    usage: /harvestseason <help|mode|info|reload>
+
+permissions:
+  harvestseason.harvest:
+    description: Allows harvesting fields with the plugin
+    default: true
+  harvestseason.modeswitch:
+    description: Allows switching modes by throwing a hoe
+    default: true
+  harvestseason.mode:
+    description: Allows changing mode with commands
+    default: true
+  harvestseason.info:
+    description: Allows checking current mode
+    default: true
+  harvestseason.admin:
+    description: Allows administrative commands (reload, set mode for others)
+    default: op
+    children:
+      harvestseason.harvest: true
+      harvestseason.modeswitch: true
+      harvestseason.mode: true
+      harvestseason.info: true

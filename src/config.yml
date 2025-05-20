@@ -1,0 +1,13 @@
+# HarvestSeason Configuration
+
+# Maximum number of blocks to harvest in a single operation
+max-harvest-blocks: 256
+
+# Default harvest mode for new players (HARVEST_ONLY or AUTO_REPLANT)
+default-mode: HARVEST_ONLY
+
+# Messages
+messages:
+  prefix: "§6[HarvestSeason] "
+  mode-changed: "§aMode changed to: %mode%"
+  no-permission: "§cYou don't have permission to do this."
